@@ -18,6 +18,7 @@ This data is extremely relevant to everyone, as power outages can happen everywh
 The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.  
 
 
+        
 
 
 **YEAR:** Indicates the year when the outage event occurred
