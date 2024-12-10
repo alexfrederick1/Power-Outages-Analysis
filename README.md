@@ -18,15 +18,24 @@ The dataset has 1534 rows and 56 columns. The dataset contains a lot of valuable
 **YEAR:** Indicates the year when the outage event occurred
 
 **MONTH:** Indicates the month when the outage event occurred
-POSTAL.CODE: 
-CLIMATE.REGION:
-CLIMATE.CATEGORY:
-CAUSE.CATEGORY:
-CAUSE.CATEGORY.DETAIL:
-OUTAGE.DURATION:
-CUSTOMERS.AFFECTED:
-POPULATION:
-TOTAL.CUSTOMERS:**
+
+**POSTAL.CODE:** Represents the postal code of the U.S. states
+
+**CLIMATE.REGION:** U.S. Climate regions as specified by National Centers for Environmental Information (nine climatically consistent regions in continental U.S.A.)
+
+**CLIMATE.CATEGORY:** This represents the climate episodes corresponding to the years. The categories—“Warm”, “Cold” or “Normal” episodes of the climate are based on a threshold of ± 0.5 °C for the Oceanic Niño Index (ONI)
+
+**CAUSE.CATEGORY:** Categories of all the events causing the major power outages
+
+**CAUSE.CATEGORY.DETAIL:** Detailed description of the event categories causing the major power outages
+
+**OUTAGE.DURATION:** Duration of outage events (in minutes)
+
+**CUSTOMERS.AFFECTED:** Number of customers affected by the power outage event
+
+**POPULATION:** Population in the U.S. state in a year
+
+**TOTAL.CUSTOMERS:** Annual number of total customers served in the U.S. state
 
 
  "OBS", 
