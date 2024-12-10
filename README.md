@@ -92,6 +92,11 @@ This line chart visualizes the average outage duration in days by year. The gene
 
 <img width="620" alt="Screenshot 2024-12-09 at 10 36 02 PM" src="https://github.com/user-attachments/assets/f7e96396-b0e2-4143-9dda-0bf6d7e66295">
 
+This pivot table shows the mean and median of the counts of customers affected by weather type. The mean is greater than the median for all weather types, indicating that there are likely several high outliers in which a huge number of customers are affected.
+
+<img width="545" alt="Screenshot 2024-12-09 at 10 42 12 PM" src="https://github.com/user-attachments/assets/3bb01995-a53b-49c2-a2ab-b3430aa0d1b0">
+
+This pivot table highlights a comparison between the mean and median power outage duration by weather type. Like the previous pivot table, we see that the mean is greater than the median for all weather types, indicating that there are likely some very long durations skewing the dataset.
 
 # Assessment of Missingness
 
