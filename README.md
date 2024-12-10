@@ -75,6 +75,9 @@ Before beginning to analyze the data, there were several steps of cleaning that 
 This pie chart shows the distriubtion of causes of power outages by severe weather type. We can see from it that the most common form of severe weather in causing power outages is thunderstorms, followed by winter storms, wind storms, and hurricanes, respectively. There are several fairly uncommon types that make up a small portion of the pie.
 
 
+![image](https://github.com/user-attachments/assets/5f226bf3-54f1-4afc-8be3-3eb70f90ac75)
+
+This histogram depicts the distribution of the number of customers affected by power outages. We can see in it that the most common bin is the one from 50,000-100,000, followed by the bin from 100,000-150,000, giving us a good sense of the number of people typically impacted by any given power outage. The histogram is skewed right, as most values are in the bins on the left, and very few are in the bins far on the right, showing that very rarely, power outages affect more than 1 million people.
 
 **Bivariate Analysis**
 
