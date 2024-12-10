@@ -66,11 +66,13 @@ Before beginning to analyze the data, there were several steps of cleaning that 
                still need to do this: show the head of your cleaned DataFrame (see Part 2: Report for instructions).
 
 **Univariate Analysis**
-
+   return
 ![image](https://github.com/user-attachments/assets/ba0081f1-2b62-4f67-a7d6-7c41ca0a6e47)
 
 
-This pie chart shows the distriubtion of causes of power outages by severe weather type. We can see from it that the most common form of severe weather in causing power outages is thunderstorms, followed by winter storms, wind storms, and hurricanes, respectively.
+This pie chart shows the distriubtion of causes of power outages by severe weather type. We can see from it that the most common form of severe weather in causing power outages is thunderstorms, followed by winter storms, wind storms, and hurricanes, respectively. There are several fairly uncommon types that make up a small portion of the pie.
+
+
 
 **Bivariate Analysis**
 
