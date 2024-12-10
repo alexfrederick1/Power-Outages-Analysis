@@ -42,20 +42,6 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 **TOTAL.CUSTOMERS:** Annual number of total customers served in the U.S. state
 
 
-YEAR: Indicates the year when the outage event occurred
-HURRICANE.NAMES: If the outage is due to a hurricane, then the hurricane name is given by this variable
-
- "OBS", 
-    "YEAR", 
-    "MONTH",
-    "POSTAL.CODE", 
-    "CLIMATE.REGION",
-    "CLIMATE.CATEGORY", 
-    "CAUSE.CATEGORY", 
-    "CAUSE.CATEGORY.DETAIL", 
-    "OUTAGE.DURATION", 
-    "CUSTOMERS.AFFECTED", 
-    "POPULATION",
-    "TOTAL.CUSTOMERS"
+# Data Cleaning and Exploratory Data Analysis
 
 
