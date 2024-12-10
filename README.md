@@ -9,7 +9,7 @@ By Alex Frederick and Sam Ouyang
 
 In this project, we analyzed a dataset about power outages in the United States. The dataset includes information about the climate, electricity consumption, and economic characteristics of the locations of outages.
 
-        Need to decide what one question we want to say it's centered around here. what specifically about severe weather? maybe come back to this after finishing the whole thing
+        Need to decide what one question we want to say it's centered around here. what specifically about severe weather? maybe come back to this after finishing the whole thing. say we define severe weather as an extreme weather event that is a storm (because we dropped random stuff like earthquakes and fires).
 
 This data is extremely relevant to everyone, as power outages can happen everywhere. The data includes power outages in different states, regions, and climates. We hope that you will learn something from this about what you can do to minimize the risk of experiencing power outages.
 
@@ -56,6 +56,12 @@ Before beginning to analyze the data, there were several steps of cleaning that 
 2. Dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather." This was done because our question is specifically about severe weather.
 
 3. Classified similar values of the variable CAUSE.CATEGORY.DETAIL together as one under the new variable WEATHER.TYPE. Many unique values of CAUSE.CATEGORY.DETAIL are redundant, so we combined them to make that column easier to interpret. For example, if CAUSE.CATEGORY.DETAIL contained any of the terms "heavy wind," "wind/rain," or "wind," we reclassified that value of CAUSE.CATEGORY.DETAIL as "wind" under the new variable WEATHER.TYPE.
+
+4. Labeled non-weather-related values of CAUSE.CATEGORY.DETAIL as NaN. We did this because those values are irrelevant to our analysis. Causes such as "fog," "earthquake," and "fire" do not fit our definiton of severe weather.
+
+5. Dropped rows in which the value of WEATHER.TYPE is NaN. These rows have an NaN value because  WEATHER.TYPE is not a relevant, weather-related cause.
+
+6. Converted all "unknown" values of WEATHER.TYPE back to NaN. We keep unknown values because there may be a reason they are unknown that our analysis could uncover. This is different from NaN values that are a result of non-weather-related causes. These should be excluded and dropped because they are outside the scope of our analysis.
 
 # Assessment of Missingness
 
