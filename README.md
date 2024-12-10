@@ -79,9 +79,18 @@ This pie chart shows the distriubtion of causes of power outages by severe weath
 
 This histogram depicts the distribution of the number of customers affected by power outages. We can see in it that the most common bin is the one from 50,000-100,000, followed by the bin from 100,000-150,000, giving us a good sense of the number of people typically impacted by any given power outage. The histogram is skewed right, as most values are in the bins on the left, and very few are in the bins far on the right, showing that very rarely, power outages affect more than 1 million people.
 
+
 **Bivariate Analysis**
 
+![image](https://github.com/user-attachments/assets/b18e97ee-5fbf-4f09-b8ba-768fe26954f2)
+
+
+This line chart visualizes the average outage duration in days by year. The general downward trend indicates that the average power outage duration has decreased over time. This is an interesting observation that we plan to explore further.
+
+
 **Interesting Aggregates**
+
+
 
 # Assessment of Missingness
 
