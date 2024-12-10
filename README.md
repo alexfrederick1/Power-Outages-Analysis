@@ -49,7 +49,13 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 
 **Data Cleaning**
 
-The dataset required a lot of cleaning before we could begin to analyze it. First, since our questions is about sever weather specificially, we dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather."
+The dataset required a lot of cleaning before we could begin to analyze it. The steps below are what we did to clean the dataset in order.
+
+1. As mentioned previously, the original dataset contained 57 columns. Only 12 of those are applicable to our analysis, so we removed all others.
+   
+2. Since our questions is about severe weather specificially, we dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather."
+
+3. 
 
 # Assessment of Missingness
 
