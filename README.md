@@ -12,7 +12,7 @@ In this project, we analyzed a dataset about power outages in the United States.
         Need to decide what one question we want to say it's centered around here. what specifically about severe weather? maybe come back to this after finishing the whole thing
 
 This data is extremely relevant to everyone, as power outages can happen everywhere. The data includes power outages in different states, regions, and climates. We hope that you will learn something from this about what you can do to minimize the risk of experiencing power outages.
-         add why they should care about our qeustion specifically
+        add why they should care about our qeustion specifically
 
 The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.
 
