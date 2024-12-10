@@ -16,6 +16,7 @@ The dataset has 1534 rows and 56 columns. The dataset contains a lot of valuable
 
 
 **YEAR:** Indicates the year when the outage event occurred
+
 **MONTH:** Indicates the month when the outage event occurred
 POSTAL.CODE: 
 CLIMATE.REGION:
