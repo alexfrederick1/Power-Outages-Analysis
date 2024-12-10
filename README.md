@@ -63,7 +63,10 @@ Before beginning to analyze the data, there were several steps of cleaning that 
 
 6. Converted all "unknown" values of WEATHER.TYPE back to NaN. We keep unknown values because there may be a reason they are unknown that our analysis could uncover. This is different from NaN values that are a result of non-weather-related causes. These should be excluded and dropped because they are outside the scope of our analysis.
 
-               still need to do this: show the head of your cleaned DataFrame (see Part 2: Report for instructions).                
+               still need to do this: show the head of your cleaned DataFrame (see Part 2: Report for instructions).
+
+![image](https://github.com/user-attachments/assets/06b353ae-0317-41f3-8525-4bdfe3a6e2e2)
+
 
 # Assessment of Missingness
 
