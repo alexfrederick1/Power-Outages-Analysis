@@ -90,15 +90,8 @@ This line chart visualizes the average outage duration in days by year. The gene
 
 **Interesting Aggregates**
 
-Dataset Count (not including affected customers NaN values)	Mean	Median
-WEATHER.TYPE			
-flooding	4	59_268	28_536
-heatwave	3	424_277	940
-hurricanes	73	391_919	160_875
-thunderstorm	217	150_943	99_000
-tornadoes	8	107_402	91_606
-wind storm	82	155_729	120_500
-winter storm	121	231_749	140_000
+<img width="620" alt="Screenshot 2024-12-09 at 10 36 02 PM" src="https://github.com/user-attachments/assets/f7e96396-b0e2-4143-9dda-0bf6d7e66295">
+
 
 # Assessment of Missingness
 
