@@ -47,6 +47,10 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 
 # Data Cleaning and Exploratory Data Analysis
 
+**Data Cleaning**
+
+The dataset required a lot of cleaning before we could begin to analyze it. First, since our questions is about sever weather specificially, we dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather."
+
 # Assessment of Missingness
 
 # Hypothesis Testing
