@@ -102,4 +102,11 @@ This pivot table highlights a comparison between the mean and median power outag
 
 # Hypothesis Testing
 
+# Framing a Prediction Model
+
+# Baseline Model
+
+# Final Model
+
+# Fairness Analysis
 
