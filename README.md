@@ -7,11 +7,14 @@ By Alex Frederick and Sam Ouyang
 # Introduction
 
 
-In this project, we analyzed a dataset about power outages in the United States. The dataset includes information about the location, climate, and economic characteristics of the locations of outages.
+In this project, we analyzed a dataset about power outages in the United States. The dataset includes information about the climate, electricity consumption, and economic characteristics of the locations of outages.
 
         Need to decide what one question we want to say it's centered around here. what specifically about severe weather? maybe come back to this after finishing the whole thing
 
-The dataset has 1534 rows and 56 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.
+This data is extremely relevant to everyone, as power outages can happen everywhere. The data includes power outages in different states, regions, and climates. We hope that you will learn something from this that could help you in the case of a power outage.
+         add why they should care about our qeustion specifically
+
+The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.
 
 
 
@@ -37,6 +40,9 @@ The dataset has 1534 rows and 56 columns. The dataset contains a lot of valuable
 
 **TOTAL.CUSTOMERS:** Annual number of total customers served in the U.S. state
 
+
+YEAR: Indicates the year when the outage event occurred
+HURRICANE.NAMES: If the outage is due to a hurricane, then the hurricane name is given by this variable
 
  "OBS", 
     "YEAR", 
