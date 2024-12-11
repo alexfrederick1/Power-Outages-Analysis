@@ -189,11 +189,17 @@ The test statistic that we are using is the proportion of shorter durations, whi
 Our permutation test runs 6 different permutation tests between all possible different year groups. Here are the results:
 
 Before 2006 vs 2006-2010: Observed Stat = 0.4716, P-value = 0.1612
+
 Before 2006 vs 2010-2012: Observed Stat = 0.4268, P-value = 0.0111
+
 Before 2006 vs After 2012: Observed Stat = 0.3248, P-value = 0.0000
+
 2006-2010 vs 2010-2012: Observed Stat = 0.4484, P-value = 0.0460
+
 2006-2010 vs After 2012: Observed Stat = 0.3457, P-value = 0.0000
+
 2010-2012 vs After 2012: Observed Stat = 0.3984, P-value = 0.0014
+
 
 &nbsp;&nbsp;&nbsp;
 
@@ -221,11 +227,43 @@ This is a multiclass classification problem, since there are multiple possible c
 The response variable we are predicting is the 'WEATHER.TYPE' column, which indicates the type of severe weather associated with each power outage. We chose this variable because identifying the cause of power outages based on weather type can help people better prepare for and respond to different weather events. This can help minimize outages and increase safety in the event of outages.
 
 &nbsp;&nbsp;&nbsp;
+
 For evaluating our model, we will use the accuracy metric, which is the proportion of correct predictions made by the classifier. Accuracy may not always capture the full picture, especially if the classes are imbalanced (if some weather types are much more frequent than others). If we have issues with class imbalance, we could consider using other metrics such as F1-score or confusion matrices, which provide more insights into how the model is performing with respect to each class. 
 
 &nbsp;&nbsp;&nbsp;
 
 # Baseline Model
+
+&nbsp;&nbsp;&nbsp;
+
+This is a multiclass classifier model aimed at predicting the type of severe weather (WEATHER.TYPE) causing a power outage using a DecisionTreeClassifier. The model includes the following features, two of which are quantitative and one of which is nominal:
+
+CLIMATE.CATEGORY (Nominal): A categorical feature that is encoded using OneHotEncoding.
+OUTAGE.DURATION.IMPUTED (Quantitative): The imputed outage duration, used as-is.
+TOTAL.CUSTOMERS (Quantitative): The total number of customers affected by the outage, used as-is.
+
+The target variable is WEATHER.TYPE, which has seven possible categories.
+
+Encoding Approach
+
+OneHotEncoding is applied to the CLIMATE.CATEGORY feature.
+OUTAGE.DURATION.IMPUTED and TOTAL.CUSTOMERS are numerical and don't require further encoding.
+Model Performance
+
+The model achieves an accuracy of 48.89% on the test set. Given that this is a multiclass classifier with 7 options, an accuracy around 50% is not entirely unexpected, especially when predicting multiple categories. A random guess would likely achieve around 14.29% accuracy (1/7), so 48.89% shows that the model is learning meaningful patterns from the data.
+
+Is the Model "Good"?
+
+An accuracy of 48.89% is decent for a multiclass classification problem, but it suggests there's room for improvement.
+This score indicates the model is slightly better than random guessing, but further improvements could come from additional feature engineering, hyperparameter tuning, or using a more complex model (e.g., ensemble methods).
+It's important to consider other metrics like precision, recall, or F1-score, especially if some weather types are more important to predict accurately.
+In conclusion, while the model's performance is not ideal, it's a reasonable starting point, and there are clear opportunities for improvement.
+
+
+
+
+
+
 
 .48 not as bad as it looks since 7 possibilities
 
