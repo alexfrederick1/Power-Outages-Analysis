@@ -299,6 +299,7 @@ Group Y: The accuracy of predictions made by the model for each weather category
 The evaluation metric we used is accuracy. Accuracy is appropriate in this context because it accounts for how well the model predicts each type of severe weather. Given that we are dealing with a multiclass classification problem, accuracy allows us to compare how the model performs across all weather types.
 
 Null Hypothesis: The model is fair. Its accuracy in predicting each type of severe weather is roughly the same, and any observed differences are due to random chance.
+
 Alternative Hypothesis: The model is unfair. Its accuracy in predicting each type of severe weather varies significantly between the different weather categories.
 
 The test statistic we used is the accuracy per class for each weather category, and we performed a permutation test to compare the observed accuracy to the distribution of accuracies obtained by randomizing the labels.
