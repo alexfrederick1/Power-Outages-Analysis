@@ -9,6 +9,8 @@ By Alex Frederick and Sam Ouyang
 
 In this project, we analyzed a dataset about power outages in the United States. The dataset includes information about the climate, electricity consumption, and economic characteristics of the locations of outages.
 
+Our analyses are centered around the following question: **How do different types of severe weather impact the severity of power outages?**
+
         Need to decide what one question we want to say it's centered around here. what specifically about severe weather? maybe come back to this after finishing the whole thing. say we define severe weather as an extreme weather event that is a storm (because we dropped random stuff like earthquakes and fires).
 
 This data is extremely relevant to everyone, as power outages can happen everywhere. The data includes power outages in different states, regions, and climates. We hope that you will learn something from this about what you can do to minimize the risk of experiencing power outages.
