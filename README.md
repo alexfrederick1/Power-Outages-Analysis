@@ -122,6 +122,18 @@ This pivot table highlights a comparison between the mean and median power outag
 
 # Assessment of Missingness
 
+&nbsp;&nbsp;&nbsp;
+
+**NMAR Analysis**
+
+The following six columns in our dataset have at least one missing value: MONTH, CLIMATE.REGION, CLIMATE.CATEGORY, OUTAGE.DURATION, CUSTOMERS.AFFECTED WEATHER.TYPE. Of these, the missigness in the column CUSTOMERS.AFFECTED may be NMAR. Missing values in CUSTOMERS.AFFECTED could be influenced by the potential values themselves. For example, smaller outages that affect fewer customers might not have recorded customer impact data, while larger outages might be more thoroughly documented and reported. This could lead to missingness that depends on the magnitude of the outage, tying back to the value of the missing data itself. 
+
+&nbsp;&nbsp;&nbsp;
+
+**Missingness Dependency**
+
+&nbsp;&nbsp;&nbsp;
+
 # Hypothesis Testing
 
 # Framing a Prediction Model
