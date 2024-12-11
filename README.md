@@ -87,10 +87,14 @@ Here is the head of our cleaned DataFrame:
 
 This pie chart shows the distriubtion of causes of power outages by severe weather type. We can see from it that the most common form of severe weather in causing power outages is thunderstorms, followed by winter storms, wind storms, and hurricanes, respectively. There are several fairly uncommon types that make up a small portion of the pie.
 
+&nbsp;&nbsp;&nbsp;
+
 
 ![image](https://github.com/user-attachments/assets/5f226bf3-54f1-4afc-8be3-3eb70f90ac75)
 
 This histogram depicts the distribution of the number of customers affected by power outages. We can see in it that the most common bin is the one from 50,000-100,000, followed by the bin from 100,000-150,000, giving us a good sense of the number of people typically impacted by any given power outage. The histogram is skewed right, as most values are in the bins on the left, and very few are in the bins far on the right, showing that very rarely, power outages affect more than 1 million people.
+
+&nbsp;&nbsp;&nbsp;
 
 
 **Bivariate Analysis**
@@ -98,8 +102,12 @@ This histogram depicts the distribution of the number of customers affected by p
 ![image](https://github.com/user-attachments/assets/b18e97ee-5fbf-4f09-b8ba-768fe26954f2)
 
 
+&nbsp;&nbsp;&nbsp;
+
 This line chart visualizes the average outage duration in days by year. The general downward trend indicates that the average power outage duration has decreased over time. This is an interesting observation that we plan to explore further.
 
+
+&nbsp;&nbsp;&nbsp;
 
 **Interesting Aggregates**
 
@@ -110,6 +118,8 @@ This pivot table shows the mean and median of the counts of customers affected b
 <img width="545" alt="Screenshot 2024-12-09 at 10 42 12 PM" src="https://github.com/user-attachments/assets/3bb01995-a53b-49c2-a2ab-b3430aa0d1b0">
 
 This pivot table highlights a comparison between the mean and median power outage duration by weather type. Like the previous pivot table, we see that the mean is greater than the median for all weather types, indicating that there are likely some very long durations skewing the dataset.
+
+&nbsp;&nbsp;&nbsp;
 
 # Assessment of Missingness
 
