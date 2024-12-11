@@ -138,10 +138,16 @@ To make this missingness MAR, we could find data that has the potential to expla
 
 To determine the missigness mechanism of the missing values in the column CUSTOMERS.AFFECTED, we ran permutation tests between CUSTOMERS.AFFECTED and several other columns. We found that the missingness of CUSTOMERS.AFFECTED does depend on OUTAGE.DURATION and does not depend on TOTAL.CUSTOMERS.
 
+&nbsp;&nbsp;&nbsp;
+
 
 <img width="1244" alt="Screenshot 2024-12-10 at 10 20 16 PM" src="https://github.com/user-attachments/assets/d101e563-80f4-468b-9320-cd69e7865266">
 
+&nbsp;&nbsp;&nbsp;
+
 <img width="1247" alt="Screenshot 2024-12-10 at 10 17 37 PM" src="https://github.com/user-attachments/assets/eab38675-0688-45c8-99f6-ce26eee46125">
+
+&nbsp;&nbsp;&nbsp;
 
 
 
