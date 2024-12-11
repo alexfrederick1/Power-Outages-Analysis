@@ -221,7 +221,6 @@ This is a multiclass classification problem, since there are multiple possible c
 The response variable we are predicting is the 'WEATHER.TYPE' column, which indicates the type of severe weather associated with each power outage. We chose this variable because identifying the cause of power outages based on weather type can help people better prepare for and respond to different weather events. This can help minimize outages and increase safety in the event of outages.
 
 &nbsp;&nbsp;&nbsp;
-
 For evaluating our model, we will use the accuracy metric, which is the proportion of correct predictions made by the classifier. Accuracy may not always capture the full picture, especially if the classes are imbalanced (if some weather types are much more frequent than others). If we have issues with class imbalance, we could consider using other metrics such as F1-score or confusion matrices, which provide more insights into how the model is performing with respect to each class. 
 
 &nbsp;&nbsp;&nbsp;
