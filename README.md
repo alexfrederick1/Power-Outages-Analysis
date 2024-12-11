@@ -52,9 +52,9 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 
 Before beginning to analyze the data, there were several steps of cleaning that had to happen. The steps below are what we did to clean the dataset in order.
 
-1. Removed all columns besides the 11 that are applicable to our analysis. As mentioned previously, the original dataset contained 57 columns, so we dropped those that we did not plan to use.
+1. Removed all columns besides the 11 that are applicable to our analysis. As mentioned previously, the original dataset contained 57 columns, so we dropped those that we did not plan to use. 
    
-2. Dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather." This was done because our question is specifically about severe weather.
+2. Dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather." This was done because our question is specifically about severe weather. Then dropped the columns CAUSE.CATEGORY because it was no longer needed, as CAUSE.CATEGORY.DETAIL is more descriptive.
 
 3. Classified similar values of the variable CAUSE.CATEGORY.DETAIL together as one under the new variable WEATHER.TYPE. Many unique values of CAUSE.CATEGORY.DETAIL are redundant, so we combined them to make that column easier to interpret. For example, if CAUSE.CATEGORY.DETAIL contained any of the terms "heavy wind," "wind/rain," or "wind," we reclassified that value of CAUSE.CATEGORY.DETAIL as "wind" under the new variable WEATHER.TYPE.
 
