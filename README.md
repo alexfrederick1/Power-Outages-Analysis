@@ -19,9 +19,6 @@ This data is extremely relevant to everyone, as power outages can happen everywh
 The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.  
 
 
-&nbsp;&nbsp;&nbsp;    
-
-
 **YEAR:** Indicates the year when the outage event occurred
 
 **MONTH:** Indicates the month when the outage event occurred
@@ -57,15 +54,15 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 
 Before beginning to analyze the data, there were several steps of cleaning that had to happen. The steps below are what we did to clean the dataset in order.
 
-1. Removed all columns besides the 11 that are applicable to our analysis. As mentioned previously, the original dataset contained 57 columns, so we dropped those that we did not plan to use. 
+1. Removed all columns besides the 11 listed above that are applicable to our analysis. As mentioned previously, the original dataset contained 57 columns, so we dropped those that we did not plan to use. Removing this columns makes our analysis more narrow and focused on the question that we are trying to answer. 
    
-2. Dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather." This was done because our question is specifically about severe weather. Then dropped the columns CAUSE.CATEGORY because it was no longer needed, as CAUSE.CATEGORY.DETAIL is more descriptive.
+2. Dropped all rows in which the value of the column CAUSE.CATEGORY was not "severe weather." This was done because our question is specifically about severe weather. We also dropped the column CAUSE.CATEGORY because it was no longer needed, as CAUSE.CATEGORY.DETAIL is more descriptive. This step makes our analyses more clear.
 
 3. Classified similar values of the variable CAUSE.CATEGORY.DETAIL together as one under the new variable WEATHER.TYPE. Many unique values of CAUSE.CATEGORY.DETAIL are redundant, so we combined them to make that column easier to interpret. For example, if CAUSE.CATEGORY.DETAIL contained any of the terms "heavy wind," "wind/rain," or "wind," we reclassified that value of CAUSE.CATEGORY.DETAIL as "wind" under the new variable WEATHER.TYPE.
 
-4. Labeled non-weather-related values of CAUSE.CATEGORY.DETAIL as NaN. We did this because those values are irrelevant to our analysis. Causes such as "fog," "earthquake," and "fire" do not fit our definiton of severe weather.
+4. Labeled non-weather-related values of CAUSE.CATEGORY.DETAIL as NaN. We did this because those values are irrelevant to our analysis. Causes such as "fog," "earthquake," and "fire" do not fit our definiton of severe weather. This steps narrows the scope of our analyses by excluding values that are not revelant.
 
-5. Dropped rows in which the value of WEATHER.TYPE is NaN. These rows have an NaN value because  WEATHER.TYPE is not a relevant, weather-related cause.
+5. Dropped rows in which the value of WEATHER.TYPE is NaN. These rows have an NaN value because  WEATHER.TYPE is not a relevant, weather-related cause. Again, this step helps us eliminate unwanted data, making future analyses easier to conduct.
 
 6. Converted all "unknown" values of WEATHER.TYPE back to NaN. We keep unknown values because there may be a reason they are unknown that our analysis could uncover. This is different from NaN values that are a result of non-weather-related causes. These should be excluded and dropped because they are outside the scope of our analysis.
 
