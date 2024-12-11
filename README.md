@@ -72,7 +72,7 @@ Here is the head of our cleaned DataFrame:
 
 <img width="1142" alt="Screenshot 2024-12-10 at 7 59 16 PM" src="https://github.com/user-attachments/assets/977c5d46-a6b9-427e-aa2f-bc47cac4180d">
 
-.&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
 
 
 **Univariate Analysis**
