@@ -161,8 +161,50 @@ This plot depicts the distribution of TOTAL.CUSTOMERS for when CUSTOMERS.AFFECTE
 &nbsp;&nbsp;&nbsp;
 
 
-
 # Hypothesis Testing
+
+&nbsp;&nbsp;&nbsp;
+
+The question that we would like to answer through a permutation test is the following: **Have power outage durations improved over time?**
+
+&nbsp;&nbsp;&nbsp;
+
+Null hypothesis: Power outage durations have not improved over time.
+Alternative hypothesis: The distribution of power outage durations has improved over time. 
+
+&nbsp;&nbsp;&nbsp;
+
+To test these hypotheses, we split the data into four groups based on the YEAR variable. The four groups are of roughly equal sizes, as we calculated the interquartile range and assigned data to groups based on their placement in one of the four IQR groups. to create the groups. The first group is from before 2006, the second is from 2006-2010, the thirs is from 2010-2012, and the fourth is from after 2012.
+
+&nbsp;&nbsp;&nbsp;
+
+The columns from the dataset that this question requires are OUTAGE.DURATION and YEAR. Additionally, is uses a new column called 'Year Group.'
+
+&nbsp;&nbsp;&nbsp;
+
+The test statistic that we are using is the proportion of shorter durations, which falls under the umbrella of difference of proportions. When comparing two year groups, we are looking at what proportion of power outages have shorter durations in the more recent year group than the older year group. The significance level is 0.01. We chose this low significance level because we want to minimize risk of incorrectly rejecting the null hypothesis.
+
+&nbsp;&nbsp;&nbsp;
+
+Our permutation test runs 6 different permutation tests between all possible different year groups. Here are the results:
+
+Before 2006 vs 2006-2010: Observed Stat = 0.4716, P-value = 0.1612
+Before 2006 vs 2010-2012: Observed Stat = 0.4268, P-value = 0.0111
+Before 2006 vs After 2012: Observed Stat = 0.3248, P-value = 0.0000
+2006-2010 vs 2010-2012: Observed Stat = 0.4484, P-value = 0.0460
+2006-2010 vs After 2012: Observed Stat = 0.3457, P-value = 0.0000
+2010-2012 vs After 2012: Observed Stat = 0.3984, P-value = 0.0014
+
+&nbsp;&nbsp;&nbsp;
+
+These resulting p-values indicate that we reject the null hypothesis for the following three tests: Before 2006 vs After 2012, 2006-2010 vs After 2012, and 2010-2012 vs After 2012.
+Meanwhile, we fail to reject the null hypothesis for the following three tests: Before 2006 vs 2006-2010, Before 2006 vs 2010-2012, 2006-2010 vs 2010-2012.
+
+&nbsp;&nbsp;&nbsp;
+
+From this, we can conclude that power outage durations have generally improved over time. The three groups in which we rejected the null hypothesis included the 'After 2012' group against an older group. This leads us to believe that power outage durations did not improve significantly in the year from 2006-2012, but they made major improvements after 2012. These conclusions are extremely valuable for answering our question about power outage durations improving over time, as they give us insight into specific time frames in the improvement of outage durations. 
+
+&nbsp;&nbsp;&nbsp;
 
 # Framing a Prediction Model
 
