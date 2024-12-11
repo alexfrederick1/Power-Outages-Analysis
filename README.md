@@ -244,7 +244,7 @@ TOTAL.CUSTOMERS (Quantitative): The total number of customers affected by the ou
 
 The target variable is WEATHER.TYPE, which has seven possible categories.
 
-Encoding Approach
+**Encoding Approach**
 
 OneHotEncoding is applied to the CLIMATE.CATEGORY feature.
 OUTAGE.DURATION.IMPUTED and TOTAL.CUSTOMERS are numerical and don't require further encoding.
@@ -252,23 +252,42 @@ Model Performance
 
 The model achieves an accuracy of 48.89% on the test set. Given that this is a multiclass classifier with seven options, an accuracy around 50% is not entirely unexpected, especially when predicting multiple categories. A random guess would likely achieve around 14% accuracy (1/7), so 48.89% shows that the model is learning meaningful patterns from the data.
 
-Is the Model "Good"?
+**Is the Model "Good"?**
 
 An accuracy of 48.89% is decent for a multiclass classification problem, but it suggests there's room for improvement.
 This score indicates the model is significantly better than random guessing. Further improvements could come from additional feature engineering, hyperparameter tuning, or using a more complex model.
 It's important to consider other metrics like precision, recall, or F1-score, especially if some weather types are more important to predict accurately.
 In conclusion, while the model's performance is not ideal, it's a reasonable starting point, and there are clear opportunities for improvement.
 
-
-
-
-
-
-
-.48 not as bad as it looks since 7 possibilities
+&nbsp;&nbsp;&nbsp;
 
 # Final Model
 
+&nbsp;&nbsp;&nbsp;
+
+In this final model, we included a set of features designed to capture various factors influencing power outages:
+
+MONTH (Nominal): The month of the year is important for accounting for seasonal variations in weather patterns. We encoded this feature using OneHotEncoding to represent different seasons as separate categories.
+POSTAL.CODE (Nominal): The postal code helps capture regional weather patterns that might affect power outages differently across locations. It is encoded using OneHotEncoding.
+CUSTOMERS.AFFECTED (Quantitative): This feature reflects the scale of an outage. We binarized it using a Binarizer to distinguish between large and small outages, specifically focusing on outages that affect more than 1 million customers.
+POPULATION (Quantitative): Population size gives context to the outage’s scale and potential impact. It is kept as a continuous feature.
+
+The algorithm used is a DecisionTreeClassifier, which is well-suited for handling both categorical and numerical features. It works by splitting data into smaller homogeneous subsets based on feature values, which is useful for understanding how different factors affect the type of severe weather.
+
+**Performed GridSearchCV to optimize hyperparameters:**
+
+max_depth: Controls the maximum depth of the tree, helping prevent overfitting by limiting the number of splits.
+min_samples_split: Determines the minimum number of samples required to split an internal node, which helps avoid overfitting by ensuring nodes are split only when there are enough samples.
+criterion: The function to measure the quality of a split. We used both entropy (information gain) and gini (impurity) and selected the best one.
+
+After performing grid search, the model achieved a best cross-validation score of 69.28% and a test set accuracy of 63.78%. These results are a significant improvement from the baseline model's 48.89% accuracy. The addition of more relevant features, like seasonality, regional factors, and customer impact, alongside hyperparameter tuning, helped the model better capture the factors influencing power outages, leading to a more accurate prediction.
+
+**Conclusion**
+The final model improved over the baseline by incorporating features that better represent the key factors affecting power outages. Hyperparameter tuning further enhanced the model's performance, resulting in a stronger prediction ability.
+
+&nbsp;&nbsp;&nbsp;
 
 # Fairness Analysis
+
+&nbsp;&nbsp;&nbsp;
 
