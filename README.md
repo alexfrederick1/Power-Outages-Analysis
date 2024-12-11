@@ -138,14 +138,23 @@ To make this missingness MAR, we could find data that has the potential to expla
 
 To determine the missigness mechanism of the missing values in the column CUSTOMERS.AFFECTED, we ran permutation tests between CUSTOMERS.AFFECTED and several other columns. We found that the missingness of CUSTOMERS.AFFECTED does depend on OUTAGE.DURATION and does not depend on TOTAL.CUSTOMERS.
 
-The permutation test we ran against OUTAGE.DURATION returned an observed test statistic of 0.1479, indicating a relatively high absolute correlation for missingness of CUSTOMERS.AFFECTED and OUTAGE.DURATION. The p-value for our permutation test was 0.001, so we reject the null hypothesis that CUSTOMERS.AFFECTED is not dependnet on OUTAGE.DURATION at the 0.01 significance level.
+The permutation test we ran against OUTAGE.DURATION returned an observed test statistic of 0.1479, indicating a relatively high absolute correlation for missingness of CUSTOMERS.AFFECTED and OUTAGE.DURATION. The p-value for our permutation test was 0.001, so we reject the null hypothesis that CUSTOMERS.AFFECTED is not dependent on OUTAGE.DURATION at the 0.01 significance level.
 
 &nbsp;&nbsp;&nbsp;
 
-This plot depicts the distribution of OUTAGE.DURATION for when CUSTOMERS.AFFECTED is present and for when it is missing separately. We can clearly that the distributions are very different. The one with CUSTOMERS.AFFECTED missing has a much lower mean and less extremely high values. This leads us to believe that CUSTOMERS.AFFECTED's missigness is dependent on OUTAGE.DURATION, as when an outage has a long duration, it is more likely to be reported and therefore more likely to have a value in the CUSTOMERS.AFFECTED column.
+This plot depicts the distribution of OUTAGE.DURATION for when CUSTOMERS.AFFECTED is present and for when it is missing separately. We can clearly that the distributions are very different. The one with CUSTOMERS.AFFECTED missing has a much lower mean and less extremely high values. This leads us to believe that CUSTOMERS.AFFECTED's missingness is dependent on OUTAGE.DURATION, as when an outage has a long duration, it is more likely to be reported and therefore more likely to have a value in the CUSTOMERS.AFFECTED column.
+
+&nbsp;&nbsp;&nbsp;
+
 <img width="1244" alt="Screenshot 2024-12-10 at 10 20 16 PM" src="https://github.com/user-attachments/assets/d101e563-80f4-468b-9320-cd69e7865266">
 
 &nbsp;&nbsp;&nbsp;
+
+The permutation test that we ran against TOTAL.CUSTOMERS returned an observed test statistic of 0.0778, which is far lower than that ran against OUTAGE.DURATION. The p-value of this permutation test was 0.043, which is low, but at the 0.01 significance level, we still failed to reject the null hypothesis that CUSTOMERS.AFFECTED is not dependent on TOTAL.CUSTOMERS.
+
+&nbsp;&nbsp;&nbsp;
+
+This plot depicts the distribution of TOTAL.CUSTOMERS for when CUSTOMERS.AFFECTED is present and for when it is missing separately. The distributions appear fairly similar. The distribution when CUSTOMERS.AFFECTED is present appears to have slightly less spread, but overall, they appear very simialr. This, along with the p-value result, leads us to believe that CUSTOMERS.AFFECTED's missingness is not dependent on TOTAL.CUSTOMERS.
 
 <img width="1247" alt="Screenshot 2024-12-10 at 10 17 37 PM" src="https://github.com/user-attachments/assets/eab38675-0688-45c8-99f6-ce26eee46125">
 
