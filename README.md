@@ -48,6 +48,9 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 
 # Data Cleaning and Exploratory Data Analysis
 
+
+
+
 **Data Cleaning**
 
 Before beginning to analyze the data, there were several steps of cleaning that had to happen. The steps below are what we did to clean the dataset in order.
