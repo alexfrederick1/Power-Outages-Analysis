@@ -250,12 +250,12 @@ OneHotEncoding is applied to the CLIMATE.CATEGORY feature.
 OUTAGE.DURATION.IMPUTED and TOTAL.CUSTOMERS are numerical and don't require further encoding.
 Model Performance
 
-The model achieves an accuracy of 48.89% on the test set. Given that this is a multiclass classifier with 7 options, an accuracy around 50% is not entirely unexpected, especially when predicting multiple categories. A random guess would likely achieve around 14.29% accuracy (1/7), so 48.89% shows that the model is learning meaningful patterns from the data.
+The model achieves an accuracy of 48.89% on the test set. Given that this is a multiclass classifier with seven options, an accuracy around 50% is not entirely unexpected, especially when predicting multiple categories. A random guess would likely achieve around 14% accuracy (1/7), so 48.89% shows that the model is learning meaningful patterns from the data.
 
 Is the Model "Good"?
 
 An accuracy of 48.89% is decent for a multiclass classification problem, but it suggests there's room for improvement.
-This score indicates the model is slightly better than random guessing, but further improvements could come from additional feature engineering, hyperparameter tuning, or using a more complex model (e.g., ensemble methods).
+This score indicates the model is significantly better than random guessing. Further improvements could come from additional feature engineering, hyperparameter tuning, or using a more complex model.
 It's important to consider other metrics like precision, recall, or F1-score, especially if some weather types are more important to predict accurately.
 In conclusion, while the model's performance is not ideal, it's a reasonable starting point, and there are clear opportunities for improvement.
 
