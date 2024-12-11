@@ -15,7 +15,6 @@ Our analyses are centered around the following question: **How do different type
 
 This data is extremely relevant to everyone, as power outages can happen everywhere. The data includes power outages in different states, regions, and climates. We hope that you will learn something from this about what you can do to minimize the risk of experiencing power outages. Everyone should take an interest in our question about severe weather. Every climate on Earth is at risk of destruction caused by extreme weather. Types of severe weather differ by climate, and it's important for people to understand the risks that their local weather may bring.
 
-        add why they should care about our question specifically
 
 The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.  
 
