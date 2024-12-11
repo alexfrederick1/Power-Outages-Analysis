@@ -126,13 +126,24 @@ This pivot table highlights a comparison between the mean and median power outag
 
 **NMAR Analysis**
 
-The following six columns in our dataset have at least one missing value: MONTH, CLIMATE.REGION, CLIMATE.CATEGORY, OUTAGE.DURATION, CUSTOMERS.AFFECTED WEATHER.TYPE. Of these, the missigness in the column CUSTOMERS.AFFECTED may be NMAR. Missing values in CUSTOMERS.AFFECTED could be influenced by the potential values themselves. For example, smaller outages that affect fewer customers might not have recorded customer impact data, while larger outages might be more thoroughly documented and reported. This could lead to missingness that depends on the magnitude of the outage, tying back to the value of the missing data itself. 
+The following six columns in our dataset have at least one missing value: MONTH, CLIMATE.REGION, CLIMATE.CATEGORY, OUTAGE.DURATION, CUSTOMERS.AFFECTED WEATHER.TYPE. Of these, the missigness in the column CUSTOMERS.AFFECTED may be NMAR. Missing values in CUSTOMERS.AFFECTED could be influenced by the potential values themselves. For example, smaller outages that affect fewer customers might not have recorded customer impact data, while larger outages might be more thoroughly documented and reported. This could lead to missingness that depends on the values of the data themselves, the magnitude of the outage. That would be NMAR missingness, which is missingness that depends on the values of the missing data themselves.
+
+To make this missingness MAR, we could find data that has the potential to explain the missingness. This could happen through analysis of other columns in our dataset and their relationships with CUSTOMERS.AFFECTED.
 
 &nbsp;&nbsp;&nbsp;
 
 **Missingness Dependency**
 
 &nbsp;&nbsp;&nbsp;
+
+To determine the missigness mechanism of the missing values in the column CUSTOMERS.AFFECTED, we ran permutation tests between CUSTOMERS.AFFECTED and several other columns. We found that the missingness of CUSTOMERS.AFFECTED does depend on OUTAGE.DURATION and does not depend on TOTAL.CUSTOMERS.
+
+
+<img width="1244" alt="Screenshot 2024-12-10 at 10 20 16 PM" src="https://github.com/user-attachments/assets/d101e563-80f4-468b-9320-cd69e7865266">
+
+<img width="1247" alt="Screenshot 2024-12-10 at 10 17 37 PM" src="https://github.com/user-attachments/assets/eab38675-0688-45c8-99f6-ce26eee46125">
+
+
 
 # Hypothesis Testing
 
