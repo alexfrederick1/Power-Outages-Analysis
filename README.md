@@ -308,9 +308,15 @@ We set the significance level at 0.05, a standard value for hypothesis testing t
 These are the p-values for each weather category:
 
 Flooding: p = 1.0
+
 Hurricanes: p = 0.86
+
 Thunderstorm: p = 0.384
+
 Tornadoes: p = 1.0
+
 Wind Storm: p = 0.977
+
 Winter Storm: p = 0.175
+
 Since all p-values are greater than 0.05, we fail to reject the null hypothesis for each weather type. This indicates that the accuracy of the model does not significantly vary between the different categories of severe weather.
