@@ -138,9 +138,11 @@ To make this missingness MAR, we could find data that has the potential to expla
 
 To determine the missigness mechanism of the missing values in the column CUSTOMERS.AFFECTED, we ran permutation tests between CUSTOMERS.AFFECTED and several other columns. We found that the missingness of CUSTOMERS.AFFECTED does depend on OUTAGE.DURATION and does not depend on TOTAL.CUSTOMERS.
 
+The permutation test we ran against OUTAGE.DURATION returned an observed test statistic of 0.1479, indicating a relatively high absolute correlation for missingness of CUSTOMERS.AFFECTED and OUTAGE.DURATION. The p-value for our permutation test was 0.001, so we reject the null hypothesis that CUSTOMERS.AFFECTED is not dependnet on OUTAGE.DURATION at the 0.01 significance level.
+
 &nbsp;&nbsp;&nbsp;
 
-
+This plot depicts the distribution of OUTAGE.DURATION for when CUSTOMERS.AFFECTED is present and for when it is missing separately. We can clearly that the distributions are very different. The one with CUSTOMERS.AFFECTED missing has a much lower mean and less extremely high values. This leads us to believe that CUSTOMERS.AFFECTED's missigness is dependent on OUTAGE.DURATION, as when an outage has a long duration, it is more likely to be reported and therefore more likely to have a value in the CUSTOMERS.AFFECTED column.
 <img width="1244" alt="Screenshot 2024-12-10 at 10 20 16 PM" src="https://github.com/user-attachments/assets/d101e563-80f4-468b-9320-cd69e7865266">
 
 &nbsp;&nbsp;&nbsp;
