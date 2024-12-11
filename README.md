@@ -291,3 +291,25 @@ The final model improved over the baseline by incorporating features that better
 
 &nbsp;&nbsp;&nbsp;
 
+For this fairness analysis, the two groups we are comparing are the different types of severe weather predicted by our model. These groups are the following:
+
+Group X: The weather categories in the dataset: thunderstorm, winter storm, wind storm, hurricanes, heatwave, tornadoes, and flooding.
+Group Y: The accuracy of predictions made by the model for each weather category.
+
+The evaluation metric we used is accuracy. Accuracy is appropriate in this context because it accounts for how well the model predicts each type of severe weather. Given that we are dealing with a multiclass classification problem, accuracy allows us to compare how the model performs across all weather types.
+
+Null Hypothesis: The model is fair. Its accuracy in predicting each type of severe weather is roughly the same, and any observed differences are due to random chance.
+Alternative Hypothesis: The model is unfair. Its accuracy in predicting each type of severe weather varies significantly between the different weather categories.
+
+The test statistic we used is the accuracy per class for each weather category, and we performed a permutation test to compare the observed accuracy to the distribution of accuracies obtained by randomizing the labels.
+
+We set the significance level at 0.05, a standard value for hypothesis testing that includes some risk of Type I errors.
+These are the p-values for each weather category:
+
+Flooding: p = 1.0
+Hurricanes: p = 0.86
+Thunderstorm: p = 0.384
+Tornadoes: p = 1.0
+Wind Storm: p = 0.977
+Winter Storm: p = 0.175
+Since all p-values are greater than 0.05, we fail to reject the null hypothesis for each weather type. This indicates that the accuracy of the model does not significantly vary between the different categories of severe weather.
