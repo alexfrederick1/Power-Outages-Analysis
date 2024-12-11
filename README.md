@@ -208,9 +208,30 @@ From this, we can conclude that power outage durations have generally improved o
 
 # Framing a Prediction Model
 
+&nbsp;&nbsp;&nbsp;
+
+Our prediction problem is to predict the type of severe weather that causes a power outage. We are building a classifier, as our goal is to predict a categorical variable based on the available data. Specifically, we are trying to determine which type of severe weather is occurring at the time of the power outage based on the features in our dataset.
+
+&nbsp;&nbsp;&nbsp;
+
+This is a multiclass classification problem, since there are multiple possible classes or types of severe weather that could cause a power outage. Each weather type, such as wind storm, thunderstorm, winter storm, is a distinct category that we want to predict.
+
+&nbsp;&nbsp;&nbsp;
+
+The response variable we are predicting is the 'WEATHER.TYPE' column, which indicates the type of severe weather associated with each power outage. We chose this variable because identifying the cause of power outages based on weather type can help people better prepare for and respond to different weather events. This can help minimize outages and increase safety in the event of outages.
+
+&nbsp;&nbsp;&nbsp;
+
+For evaluating our model, we will use the accuracy metric, which is the proportion of correct predictions made by the classifier. Accuracy may not always capture the full picture, especially if the classes are imbalanced (if some weather types are much more frequent than others). If we have issues with class imbalance, we could consider using other metrics such as F1-score or confusion matrices, which provide more insights into how the model is performing with respect to each class. 
+
+&nbsp;&nbsp;&nbsp;
+
 # Baseline Model
 
+.48 not as bad as it looks since 7 possibilities
+
 # Final Model
+
 
 # Fairness Analysis
 
