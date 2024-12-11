@@ -19,7 +19,7 @@ This data is extremely relevant to everyone, as power outages can happen everywh
 The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable information in all of these columns, but will only keep 11 columns that are relevant to our question about severe weather. Those columns are listed below with a description of each.  
 
 
-        
+&nbsp;&nbsp;&nbsp;    
 
 
 **YEAR:** Indicates the year when the outage event occurred
@@ -44,14 +44,16 @@ The dataset has 1534 rows and 57 columns. The dataset contains a lot of valuable
 
 **TOTAL.CUSTOMERS:** Annual number of total customers served in the U.S. state
 
-         
+&nbsp;&nbsp;&nbsp;
 
 # Data Cleaning and Exploratory Data Analysis
 
 
-
+&nbsp;&nbsp;&nbsp;
 
 **Data Cleaning**
+
+&nbsp;&nbsp;&nbsp;
 
 Before beginning to analyze the data, there were several steps of cleaning that had to happen. The steps below are what we did to clean the dataset in order.
 
@@ -77,7 +79,7 @@ Here is the head of our cleaned DataFrame:
 
 **Univariate Analysis**
 
-.&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;
   
 ![image](https://github.com/user-attachments/assets/ba0081f1-2b62-4f67-a7d6-7c41ca0a6e47)
 
